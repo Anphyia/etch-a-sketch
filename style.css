@@ -3,10 +3,24 @@
 }
 
 body {
-    background-color: darkgray;
+    background-color: red;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#resizeButton {
+    border: 2px solid forestgreen;
+    width: 160px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 8px 24px;
+    margin-bottom: 1em;
+    font-size: 16px;
+    font-weight: 700;
+    color: #CD6689;
+    background-color: mediumaquamarine;
 }
 
 .container {
