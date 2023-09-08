@@ -1,4 +1,3 @@
-
 function makeDiv(num) {
     const container = document.querySelector('.container');
 
@@ -7,16 +6,17 @@ function makeDiv(num) {
         container.appendChild(cell);
     }
 
-const containerWidth = 960;
-const cellSize = containerWidth / num;
+    const containerWidth = 960;
+    const cellSize = containerWidth / num;
 
-container.style.width = `${containerWidth}px`;
-container.style.height = `${containerWidth}px`;
+    container.style.width = `${containerWidth}px`;
+    container.style.height = `${containerWidth}px`;
 
-const cells = container.querySelectorAll('div');
-cells.forEach(div => {
-    div.style.width = `${cellSize}px`;
-    div.style.height = `${cellSize}px`;
-});
+    const cells = container.querySelectorAll('div');
+    cells.forEach(div => {
+        div.style.width = `${cellSize}px`;
+        div.style.height = `${cellSize}px`;
+    });
 }
-makeDiv(16);
+
+makeDiv(32);

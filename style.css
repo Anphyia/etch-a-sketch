@@ -15,7 +15,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
-.container > div {
 
+.container > div {
     border: 1px solid forestgreen;
 }
