@@ -17,6 +17,18 @@ function makeDiv(num) {
         div.style.width = `${cellSize}px`;
         div.style.height = `${cellSize}px`;
     });
+    
+    colorDiv(container);
+}
+
+function colorDiv(container) {
+    const cells = container.querySelectorAll('div');
+
+    cells.forEach((div) => {
+        div.addEventListener('mouseover', () => {
+            div.style.backgroundColor = 'black';
+      });
+    });    
 }
 
 makeDiv(32);
